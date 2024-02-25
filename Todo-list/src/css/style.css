@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: dodgerblue;
+}
+.todoApp {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+.newTodo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    padding: 0 1rem;
+    min-height: 4rem;
+    background-color: white;
+}
+.todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem 0;
+    gap: 1rem;
+    margin: 0 2rem;
+}
+.todoBox {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+}
+.todoLabel {
+    display: flex;
+    font-size: 1em;
+    gap: 5px;
+}
+#addTask {
+    width: 80%;
+    height: 2rem;
+    padding-left: 1em;
+    outline: none;
+}
+#addTaskButton {
+    background-color: blue;
+    color: white;
+    height: 2rem;
+    width: 3rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+    border: none;
+}
+.removeTaskButton {
+    background-color: blue;
+    color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 3px;
+    border: none;
+}
+.editTaskButton {
+    background-color: blue;
+    color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 3px;
+    border: none;
+}
+.removeTaskButton:hover, .addTaskButton:hover, .editTaskButton:hover {
+    background-color: darkblue;
+}
+#removeAllButton {
+    background-color: gray;
+    border-radius: 3px;
+    border: none;
+    padding: 0.5rem;
+}
+#removeAllButton:hover {
+    background-color: gray;
+    color: white;
+}
+.removeAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 1rem;
+    margin: 0 2rem;
+}
+.todoLabel p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 30vmin;
+  }
+  .todoLabel p::first-letter {
+    text-transform: uppercase;
+  }
